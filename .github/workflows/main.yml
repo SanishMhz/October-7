@@ -1,12 +1,14 @@
+name: Print Message
 on:
   push:
     branches:
-    - main
+      - main
 
-jobs:
+jobs: 
   my_job:
-    name: print message
-    run:
-      echo "Hello World"
+    runs-on: ubuntu-latest
+    steps:
+      - name: print message
+        run: echo "Hello World"
 
     
